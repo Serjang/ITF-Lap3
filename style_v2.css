@@ -1,21 +1,102 @@
-.profile{
-    width: 300px;
-    height: 300px;
-    background-image: url(https://th.bing.com/th/id/OIF.lB7wwq0QYgTheHH7X2y8xQ?w=171&h=180&c=7&r=0&o=5&pid=1.7);
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.avatar {
+    width: 183px;
+    height: 183px;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
     position: relative;
 }
-.notify{
-    width: 50px;
-    height: 50px;
-    background-color: brown;
+
+.notification {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: red;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.username {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.username:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+input, button {
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+button:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }
