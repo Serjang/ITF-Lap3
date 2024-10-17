@@ -36,6 +36,11 @@ button {
     font-family: monospace;
     padding: 10px 15px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkred; /* Hover effect */
 }
 
 .content {
@@ -67,4 +72,16 @@ button {
     margin: 0 10px;
     color: bisque;
     text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
